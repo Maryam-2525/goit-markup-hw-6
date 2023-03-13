@@ -789,14 +789,19 @@ ul{
     font-weight: 400;
     line-height: calc(14.06/12);
     letter-spacing: 0.01em;
+
 }
 
 .input{
    
 }
+
+.form-svg{
+
+}
 .chckbx-agrmnt{
     font-family: "roboto";
     font-size: 12px;
-    line-height: calc(24/12);
+    line-height: calc(12/24);
     letter-spacing: 0.03em;
 }
