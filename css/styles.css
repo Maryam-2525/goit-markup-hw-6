@@ -763,13 +763,21 @@ ul{
         opacity: 1;
     }   
 }
+.modal-form{
+    width: 440px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 .form-title{
     margin-bottom: 30px;
 
 }
 .form-label{
-    display: block;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
 }  
 
 .form-label-name{
@@ -781,8 +789,5 @@ ul{
 }
 
 .input{
-    width: 100px;
-    margin: 0 0 29px 0;
-    padding: 11px 16px 11px 40px;
-    resize: none;
+   ;
 }

@@ -379,29 +379,29 @@
           </svg>
         </button>
         <h2 class="form-title">Leave your information and we'll call you back</h2>
-        <form>
+        <form class="modal-form">
           <label class="form-label">
-           <span class="form-lebal-name"> name </span>
-              <input class="input" type="name" placeholder="name"/>
+            Name
+            <input type="text" name="name" autofocus />
           </label>
-          <label  class="form-label" >
-           <span class="form-lebal-name"> Telephone Number </span> 
-            <input class="input" type="tel" placeholder="(xxx)-xxx-xxx"/>
+          <label class="form-label">
+            Telephone
+            <input type="tel" name="Telephone" />
           </label>
-          <label   class="form-label">
-           <span  class="form-lebal-name" > email </span>
-              <input class="input" type="email" placeholder="email" />
+          <label class="form-label">
+            Email
+            <input type="email" name="email" placeholder="john@mail.com">
           </label>
-          <label class="form-label" >
-           <span class="form-lebal-name" > comment </span>
-            <textarea class="input" rows="8">enter text here</textarea>
+          <label class="form-label">
+            Comments
+            <textarea name="Comments" rows="8" placeholder="Enter the text"></textarea>
           </label>
-          <label  class="form-label" >
-            <input class="input" type="checkbox" />
-            I agree with the newsletter and accept the terms
+          <label >
+            <input type="checkbox"   />
           </label>
-          <button type="submit">send</button>
-        </form>
+       <button type="submit">Send</button>
+       <p>I agree with the newsletter and accept the Terms and Conditions</p>
+       </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
