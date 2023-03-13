@@ -762,4 +762,27 @@ ul{
         scale: 1;
         opacity: 1;
     }   
-}   
+}
+.form-title{
+    margin-bottom: 30px;
+
+}
+.form-label{
+    display: block;
+    position: relative;
+}  
+
+.form-label-name{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    
+    
+}
+
+.input{
+    width: 100px;
+    margin: 0 0 29px 0;
+    padding: 11px 16px 11px 40px;
+    resize: none;
+}
