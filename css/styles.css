@@ -763,13 +763,13 @@ ul{
     }   
 }
 .modal-form{
-    width: 440px;
+    width: 448px;
     margin-left: 40px;
     margin-right: 40px;
+   
 }
 .form-title{
     margin:40px 40px;
-    margin-bottom: 0;
     font-family: "roboto";
     font-weight: 700;
     font-size: 20px;
@@ -780,7 +780,6 @@ ul{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 
     border-color:rgba(33, 33, 33, 0.2) ;
     border-radius: 4px;    
@@ -789,6 +788,11 @@ ul{
 .input:focus{
     cursor: pointer;
     border-color: #2196F3;
+}
+.input:hover *.form-svg:hover,
+.input:focus *.form-svg:focus{
+    fill: currentColor;
+  
 }
 
 .form-label-name{
@@ -799,19 +803,28 @@ ul{
     font-weight: 400;
     line-height: calc(14.06/12);
     letter-spacing: 0.01em;
+    top: -16px;
 }
 
 
 .input{
-    font-family: "roboto";
-    font-size: 12px;
-    line-height: calc(14/12);
-    color: #757575;     
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 11px 16px 11px 40px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    resize: none;
 }
+   
 
 .form-svg{
     fill: currentColor;
-    transform: translateY(100%);   
+    position: absolute;
+    top:12px;
+    left: 12px;
+}
+.checkbox{
+    margin-left: 12px;
 }
 
 .chckbx-agrmnt{
@@ -833,6 +846,5 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(80%);
-    margin-top: 20px;
+    transform: translatex(80%); 
 }
