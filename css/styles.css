@@ -786,11 +786,12 @@ ul{
 }  
 .input:hover,
 .input:focus{
-    cursor: pointer;
-    border-color: #2196F3;
+   cursor: pointer;
+    border-color: #2196F3; 
 }
-.input:hover *.form-svg:hover,
-.input:focus *.form-svg:focus{
+.input:hover +.form-svg,
+.input:focus +.form-svg{
+   
     fill: currentColor;
   
 }
@@ -818,7 +819,7 @@ ul{
    
 
 .form-svg{
-    fill: currentColor;
+    fill: #212121;
     position: absolute;
     top:12px;
     left: 12px;
