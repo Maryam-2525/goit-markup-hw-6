@@ -690,6 +690,59 @@ ul{
 .footer-middle-part{
     margin-left: 70px;
 }
+.footer-last-part{
+    margin-left:93px ;
+  
+}
+.footer-sub{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+.footer-input{
+    background-color: var(--dark-bg-color);
+   
+    
+}
+.footer-form{
+    
+}
+.footer-label-name{
+    position: absolute;
+    color: #757575;
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(14.06/12);
+    letter-spacing: 0.01em;
+    display: flex;
+    
+    
+    
+    
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    transform: translateX(50%);
+}
+
+.footer-bttn{
+    color: white;
+    background-color:#2196F3;
+    border-radius: 4px;
+    border-color: #2196F3;
+    box-shadow: 0, 0, 0, 0.15;
+   
+
+}
 
 /* MODAL SECTION */
 
@@ -782,18 +835,18 @@ ul{
     flex-direction: column;
 
     border-color:rgba(33, 33, 33, 0.2) ;
-    border-radius: 4px;    
+    border-radius: 4px; 
+    margin-bottom: 20px;
 }  
 .input:hover,
 .input:focus{
    cursor: pointer;
-    border-color: #2196F3; 
+   border-color: #2196F3; 
 }
 .input:hover +.form-svg,
 .input:focus +.form-svg{
    
     fill: currentColor;
-  
 }
 
 .form-label-name{
@@ -804,20 +857,23 @@ ul{
     font-weight: 400;
     line-height: calc(14.06/12);
     letter-spacing: 0.01em;
-    top: -16px;
+    top: -16px;    
 }
 
 
 .input{
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
     padding: 11px 16px 11px 40px;
     border: 1px solid rgba(0, 0, 0, .5);
     border-radius: 4px;
+    outline: none;
+}
+
+.txt-input{
     resize: none;
 }
    
-
 .form-svg{
     fill: #212121;
     position: absolute;
