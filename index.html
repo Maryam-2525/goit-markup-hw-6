@@ -372,11 +372,15 @@
      <div class="footer-last-part">
       <h4 class="footer-sub">Subscribe to the newsletter </h4>
       <form class="footer-form">
- 
-           <input class="footer-input"  type="email" name="email" placeholder="E-mail">
-         <buttonn class="footer-bttn" type="submit">subscribe
-          <svg width="24" height="24">
-          <use href="./images/sprites.svg#icon-icon-send"></use></svg>
+           <input 
+               class="footer-input"  
+               type="email" 
+               name="email" 
+               placeholder="E-mail">
+         <button class="footer-bttn" type="submit">Subscribe
+          <svg width="24" height="24" class="bttn-svg">
+             <use href="./images/sprites.svg#icon-icon-send"></use>
+          </svg>
          </button>
       </form>
      </div>
@@ -389,37 +393,71 @@
             <use href="./images/sprites.svg#icon-vector"></use>
           </svg>
         </button>
-        <h2 class="form-title">Leave your information and we'll call you back</h2>
+        <h2 class="modal-title">Leave your information and we'll call you back</h2>
         <form class="modal-form">
-          <label class="form-label">
-            <span class="form-label-name">Name</span>
-            <svg class="form-svg" width="18" height="18">
-              <use href="./images/sprites.svg#icon-person-black-18dp-1-1" ></use>
-            </svg>
-            <input class="input" type="text" name="name" autofocus />
-          </label>
-          <label class="form-label">
-           <span class="form-label-name">Telephone </span> 
-           <svg class="form-svg" width="13" height="13">
-            <use href="./images/sprites.svg#icon-phone-black-18dp-1-1" ></use>
-          </svg>
-            <input class="input" type="tel" name="Telephone" />
-          </label>
-          <label class="form-label">
-           <span class="form-label-name">Email</span> 
-           <svg class="form-svg" width="15" height="12">
-            <use href="./images/sprites.svg#icon-email-black-18dp-1"></use>
-          </svg>
-            <input class="input"  type="email" name="email">
-          </label>
-          <label class="form-label">
-          <span class="form-label-name"> Comments</span>
-            <textarea class="txt-input input" name="Comments" rows="8" placeholder="Enter the text"></textarea>
-          </label>
-          <label >
-            <input class="checkbox" type="checkbox"  />
-         <span class="chckbx-agrmnt">agree with the newsletter and accept the Terms and<br> Conditions</span>
-        </label>
+         <div class="modal-label">
+            <label for="name" class="modal-label-name">Name</label>
+            <div class="input-cont">
+             <input 
+                 id="name"
+                  type="text"
+                  class="input"
+                  minlength="9"
+                  name="name"
+                  required
+                  />
+                  <svg width="18" height="18" class="modal-svg">
+                   <use href="./images/sprites.svg#icon-person-black-18dp-1-1"> </use>
+                 </svg>
+            </div> 
+          </div> 
+          <div class="modal-label">
+           <label for="phone" class="modal-label-name">phone number</label>
+           <div class="input-cont">
+             <input 
+                 id="phone"
+                  type="tel"
+                  class="input"
+                  minlength="12"
+                  name="telephone"
+                  required 
+                  /> 
+              <svg  width="13" height="13" class="modal-svg">
+               <use href="./images/sprites.svg#icon-phone-black-18dp-1-1" ></use>
+              </svg>
+            </div>
+          </div>
+         <div class="modal-label">
+           <label for="mail" class="modal-label-name">E-mail</label>
+           <div class="input-cont">
+              <input 
+                 id="mail"
+                  type="email"
+                  class="input"
+                  minlength="12"
+                  name="email"
+                  required
+                  />
+               <svg  width="15" height="12" class="modal-svg">
+                 <use href="./images/sprites.svg#icon-email-black-18dp-1"></use>
+               </svg>
+            </div>
+          </div>
+          <div class="modal-label">
+            <label for="comments" class="modal-label-name">Comments</label>
+            <textarea rows="8" name="comments" id="comments" placeholder="Enter the text" class="modal-textarea"></textarea>
+          </div>
+          <div class="modal-label">
+            <input type="checkbox" id="check" name="conditions"
+            class="modal-chkbx visually-hidden" required>
+            <label for="check" class="chckbx">
+              <span class="chckbx-cont">
+                <svg class="chckbx-svg" width="16" height="15">
+                  <use href="./images/sprites.svg#icon-chk-1"></use>
+                </svg>
+              </span>
+              I agree with the newsletter and accept the Terms and Conditions
+            </label>
        <button class="form-bttn" type="submit">Send</button>
        </form>
       </div>
